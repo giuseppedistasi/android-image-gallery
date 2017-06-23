@@ -28,7 +28,6 @@ import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
 import java.io.File;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 
@@ -51,7 +50,7 @@ public class ShowMagazineActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ulisse);
+        setContentView(R.layout.activity_image_gallery);
 
         dataSource = (GallerySource) getIntent().getSerializableExtra(SOURCE);
 
@@ -113,7 +112,9 @@ public class ShowMagazineActivity extends Activity {
                     }
                 }
 
+
                 configureThumbnails();
+
                 configurePager();
 
                 break;
