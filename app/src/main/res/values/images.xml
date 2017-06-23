@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="images_array">
+        <item>https://processing.org/tutorials/pixels/imgs/tint1.jpg</item>
+        <item>http://www.androidmaster.info/images/dhiraj.jpg</item>
+        <item>http://www.android-examples.com/wp-content/uploads/2016/01/image_view_check.png</item>
+        <item>https://cdn-images-1.medium.com/max/1600/1*QUO-bbhxtocaU0XC_dap_Q.png</item>
+        <item>https://lh6.ggpht.com/OTyrezY1SaGSeusi0E85V05fl5Td6i9xEBKBGyGCCMfCOK7T6CUveuIvxcJykf8H4zA=w300</item>
+        <item>http://ecx.images-amazon.com/images/I/516LOQ1JOhL._SY300_QL70_.jpg</item>
+        <item>https://i.kinja-img.com/gawker-media/image/upload/s--aai-ucu9--/xqca8m8uizcp653gvdzp.png</item>
+    </string-array>
+
+</resources>

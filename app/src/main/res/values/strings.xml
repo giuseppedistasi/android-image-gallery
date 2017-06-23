@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidImageGallery</string>
+    <string name="gallery">Gallery</string>
+    <string name="start_gallery_assets">Assets gallery</string>
+    <string name="start_gallery_web">Web gallery</string>
+    <string name="start_gallery_web_xml">Web gallery from xml resources</string>
+    <string name="no_images">Nessun immagine presente</string>
+</resources>
