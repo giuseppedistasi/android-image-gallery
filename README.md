@@ -1,8 +1,5 @@
 # android-image-gallery
 
-
-# android-smart-contact-extractor
-
 # Features
 
 - A smart, fast and easy to use image gallery for android 
