@@ -30,7 +30,7 @@ Add the following files to your project
 - pager_gallery_item.xml
 - thumb.xml
 
-# Load local images from asset folder
+# Load local images from asset folder (subfolder "gallery")
 
           Intent i = new Intent(MainActivity.this,ShowMagazineActivity.class);
 
