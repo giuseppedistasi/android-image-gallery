@@ -4,7 +4,7 @@
 
 - A smart, fast and easy to use image gallery for android 
 
-- Display image gallery with a set of features like thumbnails bar, pinch-to-zoom, fullscreen, tap-to-zoom
+- Display image gallery with a set of features like thumbnails, pinch-to-zoom, fullscreen, tap-to-zoom
 
 - Loads picture from assets or from web
 
