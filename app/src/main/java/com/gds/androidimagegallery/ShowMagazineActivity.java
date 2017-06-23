@@ -41,7 +41,7 @@ public class ShowMagazineActivity extends Activity {
     private RelativeLayout thmbnailsLayout;
 
     public static final String SOURCE = "source";
-    private GallerySource dataSource;
+    private GalleryConfig dataSource;
     private final static int maxZoom = 6;
     private String title;
     private Toolbar toolbar;
@@ -52,7 +52,7 @@ public class ShowMagazineActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_gallery);
 
-        dataSource = (GallerySource) getIntent().getSerializableExtra(SOURCE);
+        dataSource = (GalleryConfig) getIntent().getSerializableExtra(SOURCE);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
 
@@ -263,5 +263,9 @@ public class ShowMagazineActivity extends Activity {
 
     public static Uri getAssetsUri(String relativeName, String folderName) {
         return Uri.fromFile(new File("//android_asset/" + folderName + "/" + relativeName));
+    }
+
+    public static void start(){
+
     }
 }

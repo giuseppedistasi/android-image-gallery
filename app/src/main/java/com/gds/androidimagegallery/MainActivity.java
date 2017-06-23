@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -26,7 +25,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this,ShowMagazineActivity.class);
 
-                GallerySource gallerySource = new GallerySource("Gallery", "gallery");
+                GalleryConfig gallerySource = new GalleryConfig.GalleryConfigBuilder()
+                        .title(getString(R.string.gallery))
+                        .folder("gallery")
+                        .build();
+
                 i.putExtra(SOURCE, gallerySource);
                 startActivity(i);
             }
@@ -39,7 +42,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent i = new Intent(MainActivity.this,ShowMagazineActivity.class);
-                GallerySource gallerySource = new GallerySource("Gallery", R.array.images_array);
+
+                GalleryConfig gallerySource = new GalleryConfig.GalleryConfigBuilder()
+                        .title(getString(R.string.gallery))
+                        .resourceFile(R.array.images_array)
+                        .build();
+
                 i.putExtra(SOURCE, gallerySource);
                 startActivity(i);
             }
@@ -59,10 +67,15 @@ public class MainActivity extends AppCompatActivity {
                 String f = "http://ecx.images-amazon.com/images/I/516LOQ1JOhL._SY300_QL70_.jpg";
                 String g = "https://i.kinja-img.com/gawker-media/image/upload/s--aai-ucu9--/xqca8m8uizcp653gvdzp.png";
 
-                ArrayList<String> list = new ArrayList<String>(Arrays.asList(a,b,c,d,e,f,g));
+                ArrayList<String> list = new ArrayList<>(Arrays.asList(a,b,c,d,e,f,g));
 
                 Intent i = new Intent(MainActivity.this,ShowMagazineActivity.class);
-                GallerySource gallerySource = new GallerySource("Gallery", list);
+
+                GalleryConfig gallerySource = new GalleryConfig.GalleryConfigBuilder()
+                        .title(getString(R.string.gallery))
+                        .urls(list)
+                        .build();
+
                 i.putExtra(SOURCE, gallerySource);
                 startActivity(i);
             }
